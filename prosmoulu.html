@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tajná zpráva</title>
+  <style>
+    /* Základní nastavení pro celé tělo stránky */
+    body {
+      background-color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      margin: 0;
+    }
+    /* Styl pro tajný text */
+    .secret {
+      color: white; /* Bílý text na bílém pozadí */
+      transition: color 0.3s ease; /* Plynulá změna barvy */
+      cursor: pointer; /* Změna kurzoru při najetí */
+      user-select: none; /* Standardně nelze text označit */
+    }
+    /* Po najetí myší nebo zaostření se text zobrazí černě */
+    .secret:hover,
+    .secret:focus {
+      color: black;
+      user-select: text;
+    }
+    /* Instrukce pro uživatele */
+    .instruction {
+      color: gray;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Tajná zpráva</h2>
+  <!-- Přidání tabindex="0" umožní zaostření klávesnicí -->
+  <p class="secret" tabindex="0">Dneska jsem na tebe hodně myslel. Jsi pro mě opravdu důležitá a chci, abys byla šťastná. Miluju tě Terii ❤️</p>
+  <p class="instruction">(Umísti kurzor myši nebo klepni na text, aby se objevil!)</p>
+</body>
+</html>
